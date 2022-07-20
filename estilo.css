@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#949090, #e1a9e4) fixed;
+}
+h1{
+    margin: 1%;
+    color: dimgrey;
+}
+h1:hover{
+    color: thistle;
+    transition: all 1s ease;
+}
+p{
+    margin: 1%;
+    
+}
+p:hover{
+    color: midnightblue;
+    transition: all 1s ease-out;
+}
+div{
+    border: 1px solid black;
+    padding: 1%;
+}
