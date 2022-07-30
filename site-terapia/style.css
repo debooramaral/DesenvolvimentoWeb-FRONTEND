@@ -16,7 +16,7 @@
 h1{
     text-align: center;
     font-size: 5rem;
-    margin: 1rem;
+    margin: 3rem;
 }
 .container{
     display: flex;
@@ -30,10 +30,10 @@ h1{
     z-index: 2;
 }
 .header img{
-    width: 800px;
-    height: 1000px;
+    width: 600px;
+    height: 400px;
     position: absolute;
-    left: 40%;
+    left: 35%;
     top: 1%;
     width: auto;
     height: 100%;
@@ -43,18 +43,96 @@ h1{
     position: absolute;
     display: flex;
     top: 35%;
-    left: 45%;
+    left: 40%;
 }
 .content form{
-    width: 400px;
+    width: 500px;
     height: 350px;
 }
 .content div{
     display: flex;
     justify-content: center;
-       
+    margin: 4%;
+}
+.content label{
+    font-size: 20px;
+    font-weight: lighter;
+    letter-spacing: 3px;
+}
+.content input{
+    width: 75%;
+    padding: 10px;
+    border: 1px solid var(--cor-preto);
+    border-radius: 3px;
+}
+.content input:hover{
+    border: 2px solid var(--cor-rosa);
+}
+.content button{
+    width: 100px;
+    height: 50px;
+    font-size: 25px;
+    letter-spacing: 2px;
+    border: 1px solid var(--cor-preto);
+    border-radius: 3px;
+    background: none;
+}
+.content button:hover{
+    background: var(--cor-verde);
+}
+.content p{
+    font-size: 15px;
+}
+.content a{
+    text-decoration: none;
+    cursor: pointer;
+}
+.content a:hover{
+    color: var(--cor-roxo);
 }
 
+/*---------------------------------------*/
 
+.cadastro-area{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    overflow: hidden;
+    height: 85vh;
+   margin-top: 1%;
+   margin-left: 1%;
+}
+.form-cadastro{
+    position: relative;
+    z-index: 2;
+    background: aqua;
+    width: 70rem;
+}
+.form-cadastro form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.credenciais{
+    width: 50rem;
+}
+.credenciais div{
+    background: pink;
+}
+.autenticacao{
+    width: 50rem;
+}
+.autenticacao div{
+    background: gray;
+}
+.aside img{
+    position: absolute;
+    left: 60%;
+    top: 0;
+    width: auto;
+    height: 100%;
+    opacity: 0.6;
+}
 
 
