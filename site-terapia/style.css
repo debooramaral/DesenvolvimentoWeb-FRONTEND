@@ -26,14 +26,14 @@ h1{
     position: relative;
     overflow: hidden;
     width: auto;
-    height: 85vh;
+    height: 75vh;
     z-index: 2;
 }
 .header img{
     width: 600px;
     height: 400px;
     position: absolute;
-    left: 35%;
+    left: 36%;
     top: 1%;
     width: auto;
     height: 100%;
@@ -174,4 +174,26 @@ h1{
     justify-content: space-around;
     display: flex;
     margin-top: 2%;
+}
+@media screen and (min-width: 600px) and (max-width: 900px){
+    .container:hover{
+        border: 1px solid;
+    }
+    .header img{
+        left: 20%;
+    }
+    .content{
+        left: 15%;
+    }
+}
+@media screen and (min-width: 500px) and (max-width: 800px){
+    .cadastro-area:hover{
+        border: 1px solid;
+    }    
+    .aside img{
+        left: 25%;
+    }
+    .form-cadastro form{
+        margin-left: 0px;
+    }
 }
