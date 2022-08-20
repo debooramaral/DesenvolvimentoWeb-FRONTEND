@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <link rel="shortcut icon" href="img/LOGO - oficial.bmp" type="image/x-icon">
     <title>Faça Login</title>
 </head>
@@ -20,18 +21,17 @@
             </div>
             
             <div class="content">
-                <form action="">
-                    
+                <form action="" onsubmit="return valida_form(this)">
                     <div class="email">
-                        <label for="">E-Mail: </label>
-                        <input type="text">
+                        <label for="email">E-Mail: </label>
+                        <input type="text" id="email" name="email">
                     </div>
                     <div class="senha">
-                        <label for="">Senha: </label>
-                        <input type="text">
+                        <label for="password">Senha: </label>
+                        <input type="password" id="password" name="password" >
                     </div>
-                    <div class="btn">
-                        <button>Entrar</button>
+                    <div class="btn" id="btn-entrar" >
+                        <button onclick="funcao1()" value="Preencheu todos os campos? HAHAHAHA">Entrar</button>
                     </div>
                     <div class="cadastro">
                         <p>Não possui conta? <a href="./cadastro.html">Cadastre-se</a></p>
