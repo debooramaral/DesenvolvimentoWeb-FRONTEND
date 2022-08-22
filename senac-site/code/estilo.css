@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Secular+One&display=swap');
+
+:root{
+    --azul: #03588C;
+    --laranja-forte: #F28322;
+    --laranja-claro: #F2B885;
+    --preto: #0D0D0D;
+    --fonte-titulos: 'Secular One', sans-serif;
+    --fonte: 'PT Sans Narrow', sans-serif;
+}
+/*Home*/
+
+.header{
+    width: 100vw;
+    height: 10vw;
+}
+.header div{
+    display: flex;
+}
+.header div img{
+    max-width: 100%;
+}
+.navbar{
+    display: flex;
+    font-family: var(--fonte-titulos);
+}
+.navbar div{
+    margin: 0 20% 0 5%;
+}
+.navbar h1{
+    border-bottom: 1px solid var(--laranja-claro);
+}
+.navbar h1:hover{
+    border-bottom: 3px solid var(--laranja-forte);
+    cursor: pointer;
+}
