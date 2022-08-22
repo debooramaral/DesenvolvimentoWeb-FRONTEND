@@ -17,7 +17,7 @@
 }
 function insiradadoss(){
     var password = document.getElementById("password").value;
-    if(password == null || email == ""){
+    if(password == null || password == ""){
         alert("Cuidado, precisa de SENHA")
     } else{
         alert("OTIMO :D");
