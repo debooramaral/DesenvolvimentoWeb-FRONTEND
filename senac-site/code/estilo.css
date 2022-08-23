@@ -12,6 +12,8 @@
     --preto: #0D0D0D;
     --fonte-titulos: 'Secular One', sans-serif;
     --fonte: 'PT Sans Narrow', sans-serif;
+    --azul-claro: rgb(3, 88, 140, 38%);
+    --laranja-claro2: rgb(242, 184, 133, 37%);
 }
 /*Home*/
 
@@ -39,3 +41,44 @@
     border-bottom: 3px solid var(--laranja-forte);
     cursor: pointer;
 }
+
+/*cursos e matricula*/
+
+.cursos-matricula{
+    margin-top: 15.5%;
+    background: var(--azul-claro);
+    font-family: var(--fonte);
+}
+.cursos-matricula h2{
+    text-align: center;
+    padding: 2%;
+}
+.cursos{
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    width: 80%;
+    margin-left: 10%;
+}
+.curso-saude, .curso-be, .curso-com, .curso-ti{
+    border: 1px solid;
+    width: 80%;
+    text-align: center;
+}
+.matricula h3{
+    text-align: center;
+    padding: 2%;
+}
+.btn-matricula{
+    display: flex;
+    justify-content: center;
+}
+.btn-matricula button{
+    all: unset;
+    cursor: pointer;
+    outline: revert;
+    padding-bottom: 2%;
+}
+
+
+
