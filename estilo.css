@@ -1,33 +1,176 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-body{
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Secular+One&display=swap');
+
+:root{
+    --azul: #03588C;
+    --laranja-forte: #F28322;
+    --laranja-claro: #F2B885;
+    --preto: #0D0D0D;
+    --fonte-titulos: 'Secular One', sans-serif;
+    --fonte: 'PT Sans Narrow', sans-serif;
+    --azul-claro: rgb(3, 88, 140, 38%);
+    --laranja-claro2: rgb(242, 184, 133, 37%);
+}
+
+
+/*Home*/
+
+.topo{
+    width: 100%;
+    height: 100%;
+}
+.imagem-site{
+    display: flex;
+    position: static;
+}
+.imagem-site img{
+    max-width: 100%;
+}
+/*barra de navegação*/
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: var(--fonte-titulos);
+    position: static;
+    margin-bottom: 0.5%;
+    margin-top: 0.5%;
+}
+.navbar h1{
+    border-bottom: 1px solid var(--laranja-claro);
+    color: var(--azul);
+}
+.navbar h1:hover{
+    border-bottom: 3px solid var(--laranja-forte);
+    cursor: pointer;
+}
+/*cursos e matricula*/
+
+.cursos-matricula{
+    background: var(--azul-claro);
+    font-family: var(--fonte);
+    position: static;
+    margin-bottom: 0.5%;
+    margin-top: 0.5%;
+}
+.cursos-matricula h2{
+    text-align: center;
+    padding: 2%;
+}
+.cursos{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin-left: 10%;
+    gap: 3%;
+}
+.curso-saude, .curso-be, .curso-com, .curso-ti{
+    text-align: center;
+}
+.curso-saude div, .curso-be div, .curso-com div, .curso-ti div{
+    cursor: pointer;
+}
+.matricula h3{
+    text-align: center;
+    padding: 2%;
+    font-size: 25px;
+}
+.btn-matricula{
+    display: flex;
+    justify-content: center;
+}
+.btn-matricula button{
+    all: unset;
+    cursor: pointer;
+    outline: revert;
+}
+.btn-matricula img{
+    max-width: 700px;
+    max-height: 120px;
+}
+.cursos img{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    border: 4px solid transparent;
+}
+.cursos img:hover{
+    border: 4px solid var(--azul-claro); 
+}
+/**/
+.eventos{
+    background: var(--laranja-claro);
+    font-family: var(--fonte);
+    position: static;
+    margin-bottom: 0.5%;
+    margin-top: 0.5%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    background: linear-gradient(#949090, #e1a9e4) fixed;
+    justify-content: center;
 }
-h1{
-    margin: 1%;
-    color: dimgrey;
+.eventos h2{
+    text-align: center;
+    padding: 2%;
+    font-size: 60px;
+    font-weight: bold;
+    color: var(--laranja-forte);
 }
-h1:hover{
-    color: thistle;
-    transition: all 1s ease;
+.eventos h2:hover{
+    text-shadow: 3px 3px 3px gray;
 }
-p{
-    margin: 1%;
-    
+.historia-eventos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
 }
-p:hover{
-    color: midnightblue;
-    transition: all 1s ease-out;
+.historia-eventos img{
+    width: 80%;
+    border: 4px solid transparent;
 }
-div{
-    border: 1px solid black;
-    padding: 1%;
+.img-eventos1, .img-eventos2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2%;
 }
+.img-eventos1 img:hover, .img-eventos2 img:hover{
+    border: 4px solid var(--laranja-forte);
+
+}
+.img-eventos1 p, .img-eventos2 p{
+    font-family: var(--fonte);
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px grey;
+    padding-top: 1%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*RESPONSIVIDADE*/
+@media only screen and (min-width: 1200px){
+    body {
+        margin: 5px;
+    }
+    .btn-matricula img{
+        min-width: 300px;
+        min-height: 50px;
+        /*ajustar imagem do botão*/
+    }
+}
+
+
