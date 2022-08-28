@@ -8,27 +8,33 @@
     <link rel="stylesheet" href="estilo.css">
     <!-- java script -->
     <script src="script.js"></script>
+    <!-- icone no navegador -->
+    <link rel="shortcut icon" href="../dia-mundial-do-livro.png" type="image/x-icon">
     <title>Senac Hub Academy</title>
 </head>
 <body>
 
-    <section class="section1">
+    <section class="topo" id="inicio">
+        <div class="imagem-site">
+            <img src="../espaco-de-atendimento2.jpeg" alt="imagemtopo" >
+        </div>
+
+    </section>
+
+    <section class="inicio">
         <div class="header">
-            <div>
-                <img src="../espaco-de-atendimento2.jpeg" alt="imagemtopo" >
-            </div>
             <div class="navbar">
                 <div>
-                    <h1>INICIO</h1>
+                    <a href="#inicio"><h1>INICIO</h1></a>
                 </div>
                 <div>
-                    <h1>CURSOS</h1>
+                    <a href="#cursos"><h1>CURSOS</h1></a>
                 </div>
                 <div>
-                    <h1>SOBRE</h1>
+                    <a href="#sobre"><h1>SOBRE</h1></a>
                 </div>
                 <div>
-                    <h1>CONTATO</h1>
+                    <a href="#contato"><h1>CONTATO</h1></a>
                 </div>
             </div>
         </div>
@@ -39,7 +45,7 @@
     <section class="cursos-matricula">
         <div>
             <h2>Conheça as áreas de cursos que a instituição oferece a Você &#128102; &#128103;<br>Transforme a sua carreira profissional com o SENAC</h2>
-            <div class="cursos">
+            <div class="cursos" id="cursos">
                 <div class="curso-saude">
                     <div>
                         <img src="../slices/Slice 7saude.png" alt="">
@@ -71,10 +77,10 @@
         </div>
     </section>
 
-    <section class="eventos">
-        <div>
-            <div class="eventos-passados">
-                <h2>EVENTOS</h2>
+    <section class="eventos-senac">
+        <div class="eventos">
+            <h2>EVENTOS</h2>
+            <div class="historia-eventos">
                 <div class="img-eventos1">
                     <img src="../slices/Slice 12evento1.png" alt="">
                     <p>PASSADO</p>
@@ -83,6 +89,33 @@
                     <img src="../slices/Slice 13evento2.png" alt="">
                     <p>FUTURO</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="container">
+            <div class="sobre">
+                <h2>SENAC HUB ACADEMY</h2>
+                <p>
+                    Instituição que vai completar um ano em Campo Grande - MS tem destaque para a <strong style="color: #F28322;">modernização</strong> com um novo conceito em <strong style="color: #F28322;">educação profissional</strong>. Possui espaços de ensino e aprendizagem repleto de <strong style="color: #03588C;">inovação técnológica</strong>, <strong style="color: #03588C;">conexões</strong> que acompanha o mercado para formar profissionais qualificados ao serviço. Ensino Básico, Técnico e Ações Extensivas.
+                </p>
+            </div>
+        </div>
+        <div class="rodape" id="contato">
+            <div class="logo">
+                <div>
+                    <a href="#inicio"><img src="../Senac_logo.png" alt=""></a>
+                </div>
+                <div class="facebook">
+                    <a href="https://www.facebook.com/senachubacademy" target="_blank"><img src="../icons8-facebook-novo.svg" alt=""></a>
+                </div>
+                <div class="instagram">
+                    <a href="https://www.instagram.com/senachubacademy/" target="_blank"><img src="../icons8-instagram.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="frase" id="sobre">
+                <h4>Experimente o Novo Mercado &#128516;</h4>
             </div>
         </div>
     </section>

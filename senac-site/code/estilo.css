@@ -14,45 +14,52 @@
     --fonte: 'PT Sans Narrow', sans-serif;
     --azul-claro: rgb(3, 88, 140, 38%);
     --laranja-claro2: rgb(242, 184, 133, 37%);
+    --cinza: rgb(0, 0, 0, 44%);
 }
-
 
 /*Home*/
 
-.header{
-    width: 100vw;
-    height: 10vw;
+.topo{
+    width: 100%;
+    height: 100%;
 }
-.header div{
+.imagem-site{
     display: flex;
+    position: static;
 }
-.header div img{
+.imagem-site img{
     max-width: 100%;
 }
+/*barra de navegação*/
 .navbar{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     font-family: var(--fonte-titulos);
-
-}
-.navbar div{
-    margin-right: 5%;
+    position: static;
+    margin-bottom: 0.5%;
+    margin-top: 0.5%;
+    border-bottom: 1px solid transparent;
 }
 .navbar h1{
     border-bottom: 1px solid var(--laranja-claro);
+    color: var(--azul);
 }
 .navbar h1:hover{
     border-bottom: 3px solid var(--laranja-forte);
     cursor: pointer;
 }
-
+.navbar a{
+    text-decoration: none;
+}
 /*cursos e matricula*/
 
 .cursos-matricula{
-    margin-top: 15.5%;
     background: var(--azul-claro);
     font-family: var(--fonte);
+    position: static;
+    margin-bottom: 0.5%;
+    margin-top: 0.5%;
 }
 .cursos-matricula h2{
     text-align: center;
@@ -68,7 +75,9 @@
 .curso-saude, .curso-be, .curso-com, .curso-ti{
     text-align: center;
 }
-
+.curso-saude div, .curso-be div, .curso-com div, .curso-ti div{
+    cursor: pointer;
+}
 .matricula h3{
     text-align: center;
     padding: 2%;
@@ -83,6 +92,10 @@
     cursor: pointer;
     outline: revert;
 }
+.btn-matricula img{
+    max-width: 700px;
+    max-height: 120px;
+}
 .cursos img{
     width: 100%;
     height: 100%;
@@ -92,6 +105,141 @@
 .cursos img:hover{
     border: 4px solid var(--azul-claro); 
 }
+/*eventos*/
+.eventos{
+    background: var(--laranja-claro);
+    font-family: var(--fonte);
+    position: static;
+    margin-bottom: 0.5%;
+    margin-top: 0.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.eventos h2{
+    text-align: center;
+    padding: 2%;
+    font-size: 60px;
+    font-weight: bold;
+    color: var(--laranja-forte);
+}
+.eventos h2:hover{
+    text-shadow: 3px 3px 3px gray;
+}
+.historia-eventos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+}
+.historia-eventos img{
+    width: 80%;
+    border: 4px solid transparent;
+}
+.img-eventos1, .img-eventos2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2%;
+}
+.img-eventos1 img:hover, .img-eventos2 img:hover{
+    border: 4px solid var(--laranja-forte);
 
+}
+.img-eventos1 p, .img-eventos2 p{
+    font-family: var(--fonte);
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px grey;
+    padding-top: 1%;
+}
+/*footer*/
+.container{
+    background: var(--cinza);
+    font-family: var(--fonte);
+    position: static;
+    margin-top: 0.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sobre{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 1%;
+    width: 68%;
+    height: 200px;
+    color: white;
+}
+.sobre h2{
+    font-size: 35px;
+    padding-bottom: 2%
+}
+.sobre p{
+    font-size: 25px;
+    font-weight: lighter;
+    height: 50px;
+}
+.rodape{
+    display: flex;
+    justify-content: space-between;
+    background: var(--cinza);
+    font-family: var(--fonte)
+}
+.rodape div{
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+}
+.logo{
+    width: 280px;
+    margin-left: 1%;
+    cursor: pointer;
+}
+.logo img{
+    width: 100%;
+}
+.facebook, .instagram{
+    width: 150px;
+    margin-left: 5%;
+}
+.facebook img, .instagram img{
+    width: 150%;
+}
+.facebook a, .instagram a{
+    text-decoration: none;
+}
+.frase{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--azul);
+    margin-left: 30%;
+    margin-right: 1%;
+}
+
+
+
+
+
+
+
+
+
+
+/*RESPONSIVIDADE*/
+@media only screen and (min-width: 1200px){
+    body {
+        margin: 5px;
+    }
+    .btn-matricula img{
+        min-width: 300px;
+        min-height: 50px;
+        /*ajustar imagem do botão*/
+    }
+}
 
 
