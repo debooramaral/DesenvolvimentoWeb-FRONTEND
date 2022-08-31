@@ -35,7 +35,7 @@ if(media >= 7)
 
 /* utilizando a ideia do professor, do exerecicio 1, só que no 2*/
 
-function quadradoNum(){
+/*function quadradoNum(){
     let num = document.getElementById("num").value;
     let numlist = num.split(','); //separador entre os dados do array
     let numqtdd = numlist.length;
@@ -57,8 +57,28 @@ function quadradoNum(){
     /*valor = (total / numqtdd);
     alert("Valor final é: " + valor)*/
 
-    alert(quadrado);
+    /*alert(quadrado);
        
     return
-}
+}*/
     
+/* 3. Peça ao usuário para digitar 5 números em uma caixa de texto. Verifique qual é o maior número exiba-o */
+
+
+function maiorNum(){
+    var n1, n2, n3, n4, n5;
+   
+    n1 = parseInt(document.getElementById("n1").value);
+    n2 = parseInt(document.getElementById("n2").value);
+    n3 = parseInt(document.getElementById("n3").value);
+    n4 = parseInt(document.getElementById("n4").value);
+    n5 = parseInt(document.getElementById("n5").value);
+
+    var arr = [n1,n2,n3,n4,n5];
+
+    //console.log(arr);
+
+     
+
+}
+
