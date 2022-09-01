@@ -29,6 +29,8 @@ if(media >= 7)
     alert("Reprovado com a média de notas: " + media)
 }*/
 
+
+
 /* 2. Faça um programa que entre com cinco números e imprima o quadrado de cada numero 
     - minha ideia: pegar os dados do usuário; armazenar; limpar o campo e depois calcular
 */
@@ -61,11 +63,14 @@ if(media >= 7)
        
     return
 }*/
+
+
+
     
 /* 3. Peça ao usuário para digitar 5 números em uma caixa de texto. Verifique qual é o maior número exiba-o */
 
 
-function maiorNum(){
+/*function maiorNum(){
     var n1, n2, n3, n4, n5;
    
     n1 = parseInt(document.getElementById("n1").value);
@@ -76,9 +81,27 @@ function maiorNum(){
 
     var arr = [n1,n2,n3,n4,n5];
 
-    //console.log(arr);
+    //console.log("os número inseridos são: " + arr);
+    alert("os números inseridos foram: " + arr);
 
-     
+    //console.log("o maior número é: " + Math.max.apply(Math, arr)); //finalmente consegui o que queria, resolver o exercicio em apenas uma linha
+    alert(`o maior número é ${Math.max.apply(Math, arr)}`)
 
-}
+}*/
 
+
+
+
+
+
+/* 4. Peca ao usuario para digitar varias idades. Exiba quantas pessoas são maior de idade (18 anos) e quantas são menores.
+*/
+
+/* 5. Crie um programa que entre com os dados de altura e sexo de 5 pessoas. Imprima na tela quantas pessoas são do sexo feminino. Mostre também qual é a maior altura e se essa altura é de um homem ou uma mulher.
+*/
+
+/* 6. Peça ao usuario para digitar varios nomes. Exiba na tela os nomes digitados, porem de maneira invertida (do ultimo para o primeiro).
+*/
+
+/* 7. Peça para o usuario digitar uma data. Exiba separadamente o dia, o mes e o ano.
+*/
