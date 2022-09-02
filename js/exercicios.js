@@ -90,12 +90,29 @@ if(media >= 7)
 }*/
 
 
-
-
-
-
 /* 4. Peca ao usuario para digitar varias idades. Exiba quantas pessoas são maior de idade (18 anos) e quantas são menores.
 */
+var n1, n2, n3;
+var idade = [n1, n2, n3];
+
+console.log("as idades foram: " + idade.length);
+//console.log(`sao elas ${n1}, ${n2} e ${n3}`);
+
+function maiorIdade(){
+
+    idade.forEach(function(item, indice){
+        console.log(item, indice);
+    
+        if(indice >= 18){
+            console.log("voce digitou uma idade, maior que 18 anos ")
+        } if(indice < 18){
+            console.log("vc digitou uma idade, menor que 18 anos")
+        } else {
+            console.log(idade);
+        }
+    })
+};
+
 
 /* 5. Crie um programa que entre com os dados de altura e sexo de 5 pessoas. Imprima na tela quantas pessoas são do sexo feminino. Mostre também qual é a maior altura e se essa altura é de um homem ou uma mulher.
 */
